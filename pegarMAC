@@ -1,0 +1,12 @@
+#include <WiFi.h>
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println();
+  Serial.print("MAC Address do ESP32: ");
+  Serial.println(WiFi.macAddress());
+}
+
+void loop() {
+  // não precisa fazer nada no loop
+}
