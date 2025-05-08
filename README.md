@@ -20,3 +20,8 @@ O MAC Address é gravado na memória permanente do chip, ele não muda com o tem
 
 ------------------------------------------------------------------------------------------
 
+explicando JSON:
+- StaticJsonDocument<128> doc;: Cria um "documento" JSON que vai armazenar os dados.
+- doc["ID"] = node_id;: Coloca o ID (que foi configurado no código) dentro do JSON.
+- doc["temperatura"] = temp;: Coloca o valor da temperatura lida pelo sensor.
+
