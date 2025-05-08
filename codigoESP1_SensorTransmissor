@@ -3,13 +3,13 @@
 #include <DHT.h>
 #include <ArduinoJson.h>
 
-#define DHTPIN 4
-#define DHTTYPE DHT22  // ou DHT11 se for o seu caso
+#define DHTPIN 14
+#define DHTTYPE DHT11  // ou DHT11 se for o seu caso
 DHT dht(DHTPIN, DHTTYPE);
 
 String node_id = "10-1";
 int msg_counter = 0;
-uint8_t gateway_mac[] = {0xXX, 0xXX, 0xXX, 0xXX, 0xXX, 0xXX}; // <- trocar pelo MAC do ESP2
+uint8_t gateway_mac[] = {0xCC, 0xDB, 0xA7, 0x3F, 0xB8, 0xD8}; // <- trocar pelo MAC do ESP2
 
 void onSend(const uint8_t *mac_addr, esp_now_send_status_t status) {
   Serial.print("Mensagem enviada: ");
