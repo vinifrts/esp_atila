@@ -2,13 +2,13 @@ ENVIAR
 
 #include <WiFi.h>
 
-const char* ssid = "ESP_AP";         // Nome da rede
-const char* password = "12345678";   // Senha da rede (mínimo 8 caracteres)
+const char* ssid = "ESP_AP";         
+const char* password = "12345678";   
 
 void setup() {
   Serial.begin(115200);
   
-  // Inicia o ESP como Access Point
+  // iniciar o ESP como Access Point
   WiFi.softAP(ssid, password);
 
   Serial.println("Access Point iniciado!");
@@ -19,5 +19,5 @@ void setup() {
 }
 
 void loop() {
-  // Nada aqui, ele só serve como ponto de acesso
+
 }
